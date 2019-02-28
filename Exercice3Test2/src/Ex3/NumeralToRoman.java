@@ -45,6 +45,7 @@ public class NumeralToRoman {
 	}
 	
 	}
+		System.out.println(b.isEmpty());
 		return b.toString();
 	}
 }

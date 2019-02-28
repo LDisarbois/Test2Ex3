@@ -20,7 +20,8 @@ public class ComputeTest {
 
 	@Test
 	public void computetest() {
-		assertEquals(new String("MMCMXLIII"), RA.compute(new String("MMMXL+XII-CIX")));
+
+		assertEquals("MMCMXLIII", RA.compute("MMMXL+XII-CIX"));
 	}
 
 }

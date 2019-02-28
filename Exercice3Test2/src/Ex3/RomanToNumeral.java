@@ -37,6 +37,7 @@ public class RomanToNumeral {
 			}
 		}
 		}
+		System.out.println(b);
 return b;
 	}
 }
