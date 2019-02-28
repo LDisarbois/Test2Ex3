@@ -1,36 +1,33 @@
 package Ex3;
 
-import java.util.ArrayList;
-
 public class RomanToNumeral {
 	
 	
-ArrayList<String> a = new ArrayList<String>();
 
 	
-	public int getNumeral(ArrayList<String> a) {
+	public int getNumeral(String a) {
 		int b=0;
 		
-		for(int i=0;i<a.size();i++) {
-			if(a.get(i).toString() == "I") {
+		for(int i=0;i<a.length();i++) {
+			if(a.charAt(i) == 'I') {
 				b = b + 1;
 			}else {
-				if(a.get(i).toString() == "V") {
+				if(a.charAt(i) == 'V') {
 					b=b+5;
 				}else {
-					if(a.get(i).toString() == "X") {
+					if(a.charAt(i) == 'X') {
 						b=b+10;
 					}else {
-						if(a.get(i).toString() == "L") {
+						if(a.charAt(i) == 'L') {
 							b=b+50;
 						}else {
-							if(a.get(i).toString() == "C") {
+							if(a.charAt(i) == 'C') {
 								b=b+100;
 							}else {
-								if(a.get(i).toString() == "D") {
+								if(a.charAt(i) == 'D') {
 									b=b+500;
 								}else {
-									if(a.get(i).toString() == "M") {
+									if(a.charAt(i) == 'M') {
 										b=b+1000;
 									}
 							}
