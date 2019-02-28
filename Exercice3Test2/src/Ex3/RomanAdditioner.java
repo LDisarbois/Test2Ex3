@@ -7,20 +7,24 @@ public class RomanAdditioner {
 		String j = new String();
 		int w = 0;
 		for(int i =0 ; i< x.length();i++) {
-			if (x.charAt(i) != '+' && x.charAt(i) != '-') {
+			if (x.charAt(i) != '+' &&  x.charAt(i) != '-') {
 				j = j + x.charAt(i);
 				System.out.println(j);
 			}else {
 				if (x.charAt(i) == '+') {
 					w = w + R.getNumeral(j);
+					System.out.println(w);
+					j = new String();
 				}
 				if (x.charAt(i) == '-') {
 					w = w - R.getNumeral(j);
+					System.out.println(w);
+					j = new String();
 				}
 				
 			}
 		}
-		System.out.println(w);
+
 		String r = N.getRoman(w);
 		return r;
 	}
